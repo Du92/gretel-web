@@ -1,6 +1,6 @@
 # Portfolio de Gretel Quintero
 
-Portfolio personal editorial de Gretel Quintero. Es una web estática de una sola página, construida con Next.js y preparada para publicarse en GitHub Pages.
+Gretilla esta es la web, es estática de una sola página, construida con Next.js y preparada para publicarse en GitHub Pages.
 
 ## Requisitos
 
@@ -40,7 +40,7 @@ npm run preview
 - `app/content.ts`: servicios, experiencia, facetas y enlaces.
 - `app/page.tsx`: estructura de la página, textos principales y secciones.
 - `app/globals.css`: colores, tipografías, responsive y diseño visual.
-- `public/gretel-portrait-000.jpg`: retrato principal.
+- `public/gretel.jpeg`: retrato principal.
 - `public/favicon.svg`: favicon del sitio.
 
 ## Publicar en GitHub Pages
@@ -50,7 +50,7 @@ npm run preview
 3. En **Build and deployment**, selecciona **GitHub Actions**.
 4. Haz push a la rama `main`.
 
-El workflow `.github/workflows/deploy-pages.yml` ejecuta `npm ci`, genera la exportación estática con `npm run build:github` y publica la carpeta `out/`. La variable `NEXT_PUBLIC_BASE_PATH` se toma de GitHub Pages para que estilos, scripts e imágenes funcionen también en URLs de proyecto como `usuario.github.io/nombre-del-repositorio/`.
+El workflow `.github/workflows/deploy-pages.yml` ejecuta `npm ci`, genera la exportación estática con `npm run build:github` y publica la carpeta `out/`. La variable `NEXT_PUBLIC_BASE_PATH` se toma de GitHub Pages para que estilos, scripts e imágenes funcionen también en URLs de proyecto como `Du92.github.io/gretel-web/`.
 
 ## Estructura
 
