@@ -35,7 +35,7 @@ jobs:
         run: npm ci
 
       - name: Build static site
-        run: npm run build:github
+        run: npm run build:page
         env:
           NEXT_PUBLIC_BASE_PATH: ${{ steps.pages.outputs.base_path }}
           GITHUB_ACTIONS: "true"
