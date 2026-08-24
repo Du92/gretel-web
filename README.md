@@ -1,6 +1,9 @@
 # Web de Gretel Quintero Angulo
 
-Sitio personal bilingüe, multipágina y estático para presentar la trayectoria científica, docente, literaria y divulgativa de Gretel Quintero Angulo.
+Toda la info estara en site.ts, todo lo que quieras cambiar los puedes hacer ahi directamente.
+Lo puedes cambiar directamente en el repo y en cuanto hagas el commit el se desplegara automaticamente
+
+De todos modos si quieres desplegarlo en local aqui te dejo el paso a paso basico
 
 ## Puesta en marcha
 
@@ -22,8 +25,6 @@ npm run start        # abrir la compilación de producción
 npm run build:pages  # exportación estática para GitHub Pages
 ```
 
-La exportación detecta automáticamente el nombre del repositorio y aplica su prefijo a rutas, imágenes, documentos y metadatos. Por ello funciona tanto en `usuario.github.io/repositorio/` como, tras activar `CUSTOM_DOMAIN`, en un dominio propio.
-
 ## Organización principal
 
 - `content/site.ts`: todos los textos, rutas, proyectos y metadatos bilingües.
@@ -35,6 +36,3 @@ La exportación detecta automáticamente el nombre del repositorio y aplica su p
 - `GUIA_DE_EDICION.md`: instrucciones detalladas de mantenimiento y publicación.
 - `CONTENT_TODO.md`: materiales que todavía debe facilitar Gretel.
 
-## Privacidad y licencia
-
-La web pública y la copia descargable del CV omiten dirección, teléfono, fecha y lugar de nacimiento. El código usa licencia MIT. La fotografía, el CV, los textos biográficos y el futuro contenido literario conservan los derechos de su autora y no quedan liberados por esa licencia.
