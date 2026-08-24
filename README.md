@@ -1,71 +1,40 @@
-# Portfolio de Gretel Quintero
+# Web de Gretel Quintero Angulo
 
-Gretilla esta es la web, es estática de una sola página, construida con Next.js y preparada para publicarse en GitHub Pages.
+Sitio personal bilingüe, multipágina y estático para presentar la trayectoria científica, docente, literaria y divulgativa de Gretel Quintero Angulo.
 
-## Requisitos
+## Puesta en marcha
 
-- Node.js 22 o superior
-- npm
-
-## Instalar
+Requisitos: Node.js 22 o posterior y npm.
 
 ```bash
 npm install
-```
-
-## Ejecutar en local
-
-```bash
 npm run dev
 ```
 
-Abre la URL que muestra Next.js en la terminal. Normalmente será `http://localhost:3000`.
+Abre `http://localhost:3000`. El español es el idioma inicial; las rutas `/es/` y `/en/` contienen las versiones completas.
 
-## Generar la versión estática
-
-```bash
-npm run build
-```
-
-El resultado se genera en la carpeta `out/`.
-
-## Probar la carpeta exportada
+## Comandos
 
 ```bash
-npm run preview
+npm run dev          # servidor local
+npm run build        # compilación de producción
+npm run start        # abrir la compilación de producción
+npm run build:pages  # exportación estática para GitHub Pages
 ```
 
-## Editar la web
+La exportación detecta automáticamente el nombre del repositorio y aplica su prefijo a rutas, imágenes, documentos y metadatos. Por ello funciona tanto en `usuario.github.io/repositorio/` como, tras activar `CUSTOM_DOMAIN`, en un dominio propio.
 
-- `app/content.ts`: servicios, experiencia, facetas y enlaces.
-- `app/page.tsx`: estructura de la página, textos principales y secciones.
-- `app/globals.css`: colores, tipografías, responsive y diseño visual.
-- `public/gretel.jpeg`: retrato principal.
-- `public/favicon.svg`: favicon del sitio.
+## Organización principal
 
-## Publicar en GitHub Pages
+- `content/site.ts`: todos los textos, rutas, proyectos y metadatos bilingües.
+- `content/blog/`: plantillas Markdown para entradas.
+- `app/components/`: presentación reutilizable; normalmente no hay que editarla.
+- `app/globals.css`: colores, tipografías, espaciado y responsive.
+- `public/images/`: fotografías e imagen social.
+- `public/docs/`: CV descargable.
+- `GUIA_DE_EDICION.md`: instrucciones detalladas de mantenimiento y publicación.
+- `CONTENT_TODO.md`: materiales que todavía debe facilitar Gretel.
 
-1. Sube el proyecto a un repositorio de GitHub.
-2. Entra en **Settings -> Pages**.
-3. En **Build and deployment**, selecciona **GitHub Actions**.
-4. Haz push a la rama `main`.
+## Privacidad y licencia
 
-El workflow `.github/workflows/deploy-pages.yml` ejecuta `npm ci`, genera la exportación estática con `npm run build:github` y publica la carpeta `out/`. La variable `NEXT_PUBLIC_BASE_PATH` se toma de GitHub Pages para que estilos, scripts e imágenes funcionen también en URLs de proyecto como `Du92.github.io/gretel-web/`.
-
-## Estructura
-
-```text
-app/
-  content.ts       Contenido editable
-  globals.css      Estilos globales
-  layout.tsx       Metadatos y layout raíz
-  page.tsx         Página única del portfolio
-public/
-  favicon.svg
-  gretel-portrait-000.jpg
-.github/workflows/
-  deploy-pages.yml Workflow de publicación en GitHub Pages
-next.config.ts     Exportación estática y basePath
-package.json       Scripts y dependencias
-tsconfig.json      Configuración TypeScript
-```
+La web pública y la copia descargable del CV omiten dirección, teléfono, fecha y lugar de nacimiento. El código usa licencia MIT. La fotografía, el CV, los textos biográficos y el futuro contenido literario conservan los derechos de su autora y no quedan liberados por esa licencia.

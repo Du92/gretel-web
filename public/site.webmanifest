@@ -1,0 +1,9 @@
+{
+  "name": "Gretel Quintero Angulo",
+  "short_name": "Gretel Q. Angulo",
+  "start_url": "./es/",
+  "display": "standalone",
+  "background_color": "#f4f0e8",
+  "theme_color": "#17201e",
+  "icons": [{ "src": "favicon.svg", "sizes": "any", "type": "image/svg+xml" }]
+}
