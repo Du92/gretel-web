@@ -1,6 +1,6 @@
 # Web de Gretel Quintero Angulo
 
-Toda la info estara en site.ts, todo lo que quieras cambiar los puedes hacer ahi directamente.
+Toda la info estara en `content/site.ts`, todo lo que quieras cambiar los puedes hacer ahi directamente.
 Lo puedes cambiar directamente en el repo y en cuanto hagas el commit el se desplegara automaticamente
 
 De todos modos si quieres desplegarlo en local aqui te dejo el paso a paso basico
